@@ -8,27 +8,32 @@
   padding:0;
 }
 :root{
-  --color1: #f7bd41;
-  --color2: #e9d9c0;
-  --color3: #1948c7;
-  --background: #1a1a18;
+  --color1: #00ffea;
+  --color2: #eefdfa;
+  --color3: #009c75;
+  --background: rgba(5, 15, 11);
+  --backgroundG: #005a44;
+  --backgroundG2: #013317;
+  --backgroundBox: rgba(5, 15, 11, 0.94);
 }
 
 body{
-  background-image: url(images/Texture03.png);
+  min-height: 100vh;
+  background-color: var(--backgroundG);
+  background-image: 
+    linear-gradient(-45deg, transparent 75%, var(--backgroundG2) 50%), 
+    linear-gradient(45deg, transparent 75%, var(--backgroundG2) 50%), 
+    linear-gradient(-135deg, transparent 75%, var(--backgroundG2) 50%), 
+    linear-gradient(135deg, transparent 75%, var(--backgroundG2) 50%);
+  background-size: 4rem 4rem;
+  background-position: 2rem 0, 2rem 0, 0 0, 0 0;
+  z-index: 1;
 
 }
 
 .theme1{
   color: var(--color1);
   border-radius: 50px;
-  /*border: solid 2px var(--color1);
-  background-image: 
-    linear-gradient(180deg, #e4ad65 , #b3672a ,#2e170d ),
-    url(images/Texture01.png);
-  background-repeat: no-repeat;
-  background-size: cover; 
-  background-blend-mode: multiply;*/
 }
 
 .theme2{
@@ -39,6 +44,35 @@ body{
   color: var(--color3);
 }
 
+.Box{
+  background: var(--backgroundBox);
+}
+
+/*Nav Bar*/
+.Nav{
+  color:var(--color2);
+  background-color: var(--backgroundBox);
+  border-radius: 50px;
+  z-index: 1px;
+}
+.NavBtn:hover{
+  color: var(--color1);
+  transition-duration: 0.5s;
+  text-shadow: 0 0 5px var(--color1), 0 0 10px var(--color1);
+}
+/*Slider btn Hover*/
+.SliderBtn:hover{
+  background-color: var(--color1);
+  transition-duration: 0.5s;
+  box-shadow: 0 0 10px var(--color1), 0 0 15px var(--color1);
+}
+.Email:hover{
+  color: var(--color1);
+  transition-duration: 0.5s;
+  text-shadow: 0 0 5px var(--color1), 0 0 10px var(--color1);
+}
+/*Framework Icon*/
+
 .icon{
   color: var(--color2);
   background-color: var(--background);
@@ -48,7 +82,6 @@ body{
   place-items: center;
   border-radius: 6px;
   border: solid 1px var(--color2);
-  padding: 10px;
 }
 
 .icon:hover{
@@ -57,11 +90,69 @@ body{
   transition-duration: 0.5s;
   box-shadow: 0 0 10px var(--color1), 0 0 15px var(--color1);
 }
+
+/*Certification Links*/
+
+.Cert:hover{
+  color: var(--color1);
+  transition-duration: 0.5s;
+  text-shadow: 0 0 5px var(--color1), 0 0 10px var(--color1);
+}
+
+/*Send Message Button*/
+
+.MessageBtn{
+  color: var(--color2);
+  background-color: var(--color3);
+  border-radius: 6px;
+  border: solid 1px var(--background);
+  padding: 10px;
+}
+.MessageBtn:hover{
+  color: var(--background);
+  background-color: var(--color1);
+  border: solid 1px var(--color1);
+  transition-duration: 0.5s;
+  box-shadow: 0 0 10px var(--color1), 0 0 15px var(--color1);
+}
+/*Proyect Title*/
+.ProyectT{
+  color: var(--color3);
+  border-radius: 6px;
+  text-decoration: underline;
+}
+.ProyectT:hover{
+  padding: 10px;
+  color: var(--color1);
+  border: solid 1px var(--color1);
+  transition-duration: 0.5s;
+  box-shadow: 0 0 10px var(--color1), 0 0 15px var(--color1);
+}
+
+/*Message text-box*/
+.MessageBox{
+  color: var(--background);
+  background-color: var(--color2);
+}
+
+/*LinkedIn and Github buttons*/
 .LinkedIn{
   color: rgb(255, 255, 255);
   background-color: rgb(0, 78, 180);
 }
+.LinkedIn:hover{
+  color: #ffffff;;
+  border: solid 1px #ffffff;
+  transition-duration: 0.5s;
+  box-shadow: 0 0 10px #ffffff, 0 0 15px #ffffff;
+}
 .Github{
-  color: rgb(69, 69, 70);
+  color: #454546;
   background-color: rgb(255, 255, 255);;
+}
+.Github:hover{
+  color: #454546;
+  border: solid 1px #454546;
+  transition-duration: 0.5s;
+  box-shadow: 0 0 10px #ffffff, 0 0 15px #ffffff;
 }

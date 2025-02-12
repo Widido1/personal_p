@@ -14,23 +14,23 @@ export function IconTec(props:IconProps){
     const IconSwitch = (name:string) => {
         switch(name){
             case "Html":
-                return(<div className="icon"><FaHtml5 />HTML</div>);
+                return(<div className="icon p-[6px] text-xs min-[402px]:text-sm min-[902px]:p-[10px]"><FaHtml5 />HTML</div>);
             case "Css":
-                return(<div className="icon"><FaCss3 />CSS</div>);
+                return(<div className="icon p-[6px] text-xs min-[402px]:text-sm min-[902px]:p-[10px]"><FaCss3 />CSS</div>);
             case "Javascript":
-                return(<div className="icon"><IoLogoJavascript />Javascript</div>);
+                return(<div className="icon p-[6px] text-xs min-[402px]:text-sm min-[902px]:p-[10px]"><IoLogoJavascript />Javascript</div>);
             case "React":
-                return(<div className="icon"><FaReact /> <h1>React</h1> </div>);
+                return(<div className="icon p-[6px] text-xs min-[402px]:text-sm min-[902px]:p-[10px]"><FaReact /> <h1>React</h1> </div>);
             case "Next":
-                return(<div className="icon"><RiNextjsFill />NextJS</div>);
+                return(<div className="icon p-[6px] text-xs min-[402px]:text-sm min-[902px]:p-[10px]"><RiNextjsFill />NextJS</div>);
             case "Typescript":
-                return(<div className="icon"><BiLogoTypescript />Typescript</div>);
+                return(<div className="icon p-[6px] text-xs min-[402px]:text-sm min-[902px]:p-[10px]"><BiLogoTypescript />Typescript</div>);
             case "Tailwind":
-                return(<div className="icon"><RiTailwindCssFill />Tailwind</div> );
+                return(<div className="icon p-[6px] text-xs min-[402px]:text-sm min-[902px]:p-[10px]"><RiTailwindCssFill />Tailwind</div> );
             case "Prisma":
-                return(<div className="icon"><SiPrisma />Prisma</div>);
+                return(<div className="icon p-[6px] text-xs min-[402px]:text-sm min-[902px]:p-[10px]"><SiPrisma />Prisma</div>);
             case "Jquery":
-                return(<div className="icon"><DiJqueryLogo />JQuery</div>);
+                return(<div className="icon p-[6px] text-xs min-[402px]:text-sm min-[902px]:p-[10px]"><DiJqueryLogo />JQuery</div>);
             
         }
     }
