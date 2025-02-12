@@ -1,5 +1,5 @@
 This is my personal page, it was made in Next.js using Typescript, Tailwind and Resend.
-=============================================00==================================================
+=============================================00=============================================
 
 ![PersonalPage01](https://github.com/user-attachments/assets/9a1ee91e-2790-4d88-aa84-7fdf38493e58)
 ![PersonalPage02](https://github.com/user-attachments/assets/0b2b4c28-a8a4-4f72-a0c2-7f61c517ccf2)
